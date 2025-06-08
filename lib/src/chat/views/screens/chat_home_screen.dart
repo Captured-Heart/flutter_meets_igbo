@@ -1,11 +1,11 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_widget_from_html/flutter_widget_from_html.dart';
-import 'package:igbo_flutter_locale_demo/config/constants/image_constants.dart';
-import 'package:igbo_flutter_locale_demo/config/constants/text_constants.dart';
-import 'package:igbo_flutter_locale_demo/config/extensions/extensions.dart';
-import 'package:igbo_flutter_locale_demo/config/theme/app_theme.dart';
-import 'package:igbo_flutter_locale_demo/main.dart';
+import 'package:flutter_meets_igbo/config/constants/image_constants.dart';
+import 'package:flutter_meets_igbo/config/constants/text_constants.dart';
+import 'package:flutter_meets_igbo/config/extensions/extensions.dart';
+import 'package:flutter_meets_igbo/config/theme/app_theme.dart';
+import 'package:flutter_meets_igbo/main.dart';
 
 class ChatHomeScreen extends StatefulWidget {
   const ChatHomeScreen({super.key});

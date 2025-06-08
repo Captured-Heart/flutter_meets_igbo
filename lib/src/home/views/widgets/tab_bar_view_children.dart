@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:igbo_flutter_locale_demo/src/home/views/widgets/widgets.dart';
+import 'package:flutter_meets_igbo/src/home/views/widgets/widgets.dart';
 
 class TabBarViewChildren extends StatelessWidget {
   final ScrollController scrollController;

@@ -1,11 +1,11 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:faker/faker.dart' hide Image;
 import 'package:flutter/material.dart';
-import 'package:igbo_flutter_locale_demo/config/constants/image_constants.dart';
-import 'package:igbo_flutter_locale_demo/config/constants/text_constants.dart';
-import 'package:igbo_flutter_locale_demo/config/extensions/extensions.dart';
-import 'package:igbo_flutter_locale_demo/config/theme/theme.dart';
-import 'package:igbo_flutter_locale_demo/src/widgets/cache_network_image_widget.dart';
+import 'package:flutter_meets_igbo/config/constants/image_constants.dart';
+import 'package:flutter_meets_igbo/config/constants/text_constants.dart';
+import 'package:flutter_meets_igbo/config/extensions/extensions.dart';
+import 'package:flutter_meets_igbo/config/theme/theme.dart';
+import 'package:flutter_meets_igbo/src/widgets/cache_network_image_widget.dart';
 
 class FashionableShortsWidget extends StatelessWidget {
   final int index;

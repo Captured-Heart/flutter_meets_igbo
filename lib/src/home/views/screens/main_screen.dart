@@ -4,16 +4,16 @@ import 'dart:developer';
 
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:igbo_flutter_locale_demo/config/constants/icons.dart';
-import 'package:igbo_flutter_locale_demo/config/constants/text_constants.dart';
-import 'package:igbo_flutter_locale_demo/config/theme/app_style.dart';
-import 'package:igbo_flutter_locale_demo/config/theme/app_theme.dart';
-import 'package:igbo_flutter_locale_demo/config/theme/igbo_locale_color.dart';
-import 'package:igbo_flutter_locale_demo/main.dart';
-import 'package:igbo_flutter_locale_demo/src/chat/chat.dart';
-import 'package:igbo_flutter_locale_demo/src/home/views/screens/home_screen.dart';
-import 'package:igbo_flutter_locale_demo/src/location/location.dart';
-import 'package:igbo_flutter_locale_demo/src/profile/views/profile_screen.dart';
+import 'package:flutter_meets_igbo/config/constants/icons.dart';
+import 'package:flutter_meets_igbo/config/constants/text_constants.dart';
+import 'package:flutter_meets_igbo/config/theme/app_style.dart';
+import 'package:flutter_meets_igbo/config/theme/app_theme.dart';
+import 'package:flutter_meets_igbo/config/theme/igbo_locale_color.dart';
+import 'package:flutter_meets_igbo/main.dart';
+import 'package:flutter_meets_igbo/src/chat/chat.dart';
+import 'package:flutter_meets_igbo/src/home/views/screens/home_screen.dart';
+import 'package:flutter_meets_igbo/src/location/location.dart';
+import 'package:flutter_meets_igbo/src/profile/views/profile_screen.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
 
 class MainScreen extends StatefulWidget {
@@ -68,7 +68,10 @@ class _MainScreenState extends State<MainScreen> {
 }
 
 List<PersistentBottomNavBarItem> navBarsItems({required BuildContext context}) {
-  TextStyle itemTextStyle = context.theme.textTheme.bodyMedium!.copyWith(fontWeight: AppFontWeight.w700);
+  TextStyle itemTextStyle = context.theme.textTheme.bodyMedium!.copyWith(
+    fontWeight: AppFontWeight.w700,
+    color: IgboLocaleColorLight.scaffoldBackgroundColor,
+  );
   return [
     PersistentBottomNavBarItem(
       textStyle: itemTextStyle,
@@ -77,7 +80,7 @@ List<PersistentBottomNavBarItem> navBarsItems({required BuildContext context}) {
       iconSize: 24,
       activeColorPrimary: context.theme.primaryColor,
       inactiveColorPrimary: IgboLocaleColorLight.textHint,
-      activeColorSecondary: context.theme.scaffoldBackgroundColor,
+      activeColorSecondary: IgboLocaleColorLight.scaffoldBackgroundColor,
     ),
     PersistentBottomNavBarItem(
       textStyle: itemTextStyle,
@@ -86,7 +89,7 @@ List<PersistentBottomNavBarItem> navBarsItems({required BuildContext context}) {
       iconSize: 24,
       activeColorPrimary: context.theme.primaryColor,
       inactiveColorPrimary: IgboLocaleColorLight.textHint,
-      activeColorSecondary: context.theme.scaffoldBackgroundColor,
+      activeColorSecondary: IgboLocaleColorLight.scaffoldBackgroundColor,
     ),
     PersistentBottomNavBarItem(
       textStyle: itemTextStyle,
@@ -95,7 +98,7 @@ List<PersistentBottomNavBarItem> navBarsItems({required BuildContext context}) {
       title: TextConstant.location.tr(),
       activeColorPrimary: context.theme.primaryColor,
       inactiveColorPrimary: IgboLocaleColorLight.textHint,
-      activeColorSecondary: context.theme.scaffoldBackgroundColor,
+      activeColorSecondary: IgboLocaleColorLight.scaffoldBackgroundColor,
     ),
     PersistentBottomNavBarItem(
       textStyle: itemTextStyle,
@@ -104,7 +107,7 @@ List<PersistentBottomNavBarItem> navBarsItems({required BuildContext context}) {
       iconSize: 28,
       activeColorPrimary: context.theme.primaryColor,
       inactiveColorPrimary: IgboLocaleColorLight.textHint,
-      activeColorSecondary: context.theme.scaffoldBackgroundColor,
+      activeColorSecondary: IgboLocaleColorLight.scaffoldBackgroundColor,
     ),
   ];
 }

@@ -1,8 +1,8 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:igbo_flutter_locale_demo/config/constants/image_constants.dart';
-import 'package:igbo_flutter_locale_demo/config/extensions/extensions.dart';
-import 'package:igbo_flutter_locale_demo/config/theme/igbo_locale_color.dart';
+import 'package:flutter_meets_igbo/config/constants/image_constants.dart';
+import 'package:flutter_meets_igbo/config/extensions/extensions.dart';
+import 'package:flutter_meets_igbo/config/theme/igbo_locale_color.dart';
 
 class CachedNetworkImageWidget extends StatelessWidget {
   final String? imgUrl;

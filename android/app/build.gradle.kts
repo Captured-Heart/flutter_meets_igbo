@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.igbo_flutter_locale_demo"
+    namespace = "com.example.flutter_meets_igbo"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 

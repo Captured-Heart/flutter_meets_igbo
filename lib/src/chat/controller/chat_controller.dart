@@ -3,7 +3,7 @@ import 'dart:developer';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:igbo_flutter_locale_demo/config/constants/text_constants.dart';
+import 'package:flutter_meets_igbo/config/constants/text_constants.dart';
 
 class ChatController extends ChangeNotifier {
   String igboCultureStory = '';

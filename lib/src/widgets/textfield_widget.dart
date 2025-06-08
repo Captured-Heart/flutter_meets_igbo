@@ -2,10 +2,10 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:igbo_flutter_locale_demo/config/extensions/extensions.dart';
-import 'package:igbo_flutter_locale_demo/config/theme/app_style.dart';
-import 'package:igbo_flutter_locale_demo/config/theme/app_theme.dart';
-import 'package:igbo_flutter_locale_demo/config/theme/text_theme.dart';
+import 'package:flutter_meets_igbo/config/extensions/extensions.dart';
+import 'package:flutter_meets_igbo/config/theme/app_style.dart';
+import 'package:flutter_meets_igbo/config/theme/app_theme.dart';
+import 'package:flutter_meets_igbo/config/theme/text_theme.dart';
 
 class AuthTextFieldWidget extends StatefulWidget {
   const AuthTextFieldWidget({

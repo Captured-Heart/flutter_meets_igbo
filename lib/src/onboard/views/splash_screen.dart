@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:igbo_flutter_locale_demo/config/constants/enums.dart';
-import 'package:igbo_flutter_locale_demo/config/constants/image_constants.dart';
-import 'package:igbo_flutter_locale_demo/config/constants/nav_routes.dart';
-import 'package:igbo_flutter_locale_demo/src/utils/navigation_helper.dart';
-import 'package:igbo_flutter_locale_demo/src/utils/shared_prefs.dart';
+import 'package:flutter_meets_igbo/config/constants/enums.dart';
+import 'package:flutter_meets_igbo/config/constants/image_constants.dart';
+import 'package:flutter_meets_igbo/config/constants/nav_routes.dart';
+import 'package:flutter_meets_igbo/src/utils/navigation_helper.dart';
+import 'package:flutter_meets_igbo/src/utils/shared_prefs.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});

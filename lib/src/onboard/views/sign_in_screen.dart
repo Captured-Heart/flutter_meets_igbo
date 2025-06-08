@@ -2,13 +2,13 @@
 
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:igbo_flutter_locale_demo/config/constants/nav_routes.dart';
-import 'package:igbo_flutter_locale_demo/config/constants/text_constants.dart';
-import 'package:igbo_flutter_locale_demo/config/extensions/extensions.dart';
-import 'package:igbo_flutter_locale_demo/config/theme/app_theme.dart';
-import 'package:igbo_flutter_locale_demo/src/utils/navigation_helper.dart';
-import 'package:igbo_flutter_locale_demo/src/widgets/app_loader.dart';
-import 'package:igbo_flutter_locale_demo/src/widgets/textfield_widget.dart';
+import 'package:flutter_meets_igbo/config/constants/nav_routes.dart';
+import 'package:flutter_meets_igbo/config/constants/text_constants.dart';
+import 'package:flutter_meets_igbo/config/extensions/extensions.dart';
+import 'package:flutter_meets_igbo/config/theme/app_theme.dart';
+import 'package:flutter_meets_igbo/src/utils/navigation_helper.dart';
+import 'package:flutter_meets_igbo/src/widgets/app_loader.dart';
+import 'package:flutter_meets_igbo/src/widgets/textfield_widget.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});

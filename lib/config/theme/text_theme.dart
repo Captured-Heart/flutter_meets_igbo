@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:igbo_flutter_locale_demo/config/theme/theme.dart';
+import 'package:flutter_meets_igbo/config/theme/theme.dart';
 
 class AppTextStyle {
   AppTextStyle._();

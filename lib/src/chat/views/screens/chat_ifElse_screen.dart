@@ -2,15 +2,15 @@
 
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:igbo_flutter_locale_demo/config/constants/enums.dart';
-import 'package:igbo_flutter_locale_demo/config/constants/icons.dart';
-import 'package:igbo_flutter_locale_demo/config/constants/text_constants.dart';
-import 'package:igbo_flutter_locale_demo/config/extensions/extensions.dart';
-import 'package:igbo_flutter_locale_demo/config/theme/app_theme.dart';
-import 'package:igbo_flutter_locale_demo/src/chat/chat.dart';
-import 'package:igbo_flutter_locale_demo/src/home/views/widgets/widgets.dart';
-import 'package:igbo_flutter_locale_demo/src/utils/shared_prefs.dart';
-import 'package:igbo_flutter_locale_demo/src/widgets/textfield_widget.dart';
+import 'package:flutter_meets_igbo/config/constants/enums.dart';
+import 'package:flutter_meets_igbo/config/constants/icons.dart';
+import 'package:flutter_meets_igbo/config/constants/text_constants.dart';
+import 'package:flutter_meets_igbo/config/extensions/extensions.dart';
+import 'package:flutter_meets_igbo/config/theme/app_theme.dart';
+import 'package:flutter_meets_igbo/src/chat/chat.dart';
+import 'package:flutter_meets_igbo/src/home/views/widgets/widgets.dart';
+import 'package:flutter_meets_igbo/src/utils/shared_prefs.dart';
+import 'package:flutter_meets_igbo/src/widgets/textfield_widget.dart';
 
 class ChatIfElseScreen extends StatefulWidget {
   const ChatIfElseScreen({super.key});

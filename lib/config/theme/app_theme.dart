@@ -1,11 +1,10 @@
 // ignore_for_file: avoid_field_initializers_in_const_classes, omit_local_variable_types
 
-
 import 'package:flutter/material.dart';
-import 'package:igbo_flutter_locale_demo/config/theme/app_border_radius.dart';
-import 'package:igbo_flutter_locale_demo/config/theme/app_style.dart';
-import 'package:igbo_flutter_locale_demo/config/theme/igbo_locale_color.dart';
-import 'package:igbo_flutter_locale_demo/config/theme/text_theme.dart';
+import 'package:flutter_meets_igbo/config/theme/app_border_radius.dart';
+import 'package:flutter_meets_igbo/config/theme/app_style.dart';
+import 'package:flutter_meets_igbo/config/theme/igbo_locale_color.dart';
+import 'package:flutter_meets_igbo/config/theme/text_theme.dart';
 
 const Color _kPrimaryLightColor = Color(0xFF2676FC);
 const Color _kPrimaryDarkColor = Color(0xFF2676FC);
@@ -23,25 +22,15 @@ class AppColorTheme {
   final Color onDanger = const Color(0xFFFFFFFF);
 }
 
-ThemeData themeBuilder({
-  required ThemeData defaultTheme,
-  required bool isDark,
-}) {
+ThemeData themeBuilder({required ThemeData defaultTheme, required bool isDark}) {
   final Brightness brightness = defaultTheme.brightness;
   final bool isDark = brightness == Brightness.dark;
 
-  final ColorScheme colorScheme = ColorScheme.fromSeed(
-    seedColor: isDark ? _kPrimaryDarkColor : _kPrimaryLightColor,
-    brightness: brightness,
-  );
+  final ColorScheme colorScheme = ColorScheme.fromSeed(seedColor: isDark ? _kPrimaryDarkColor : _kPrimaryLightColor, brightness: brightness);
   final Color scaffoldBackgroundColor = isDark ? _kBackgroundDarkColor : colorScheme.background;
 
-  const OutlineInputBorder textFieldBorder = OutlineInputBorder(
-    borderSide: BorderSide.none,
-  );
-  final OutlineInputBorder textFieldErrorBorder = textFieldBorder.copyWith(
-    borderSide: BorderSide(color: colorScheme.error),
-  );
+  const OutlineInputBorder textFieldBorder = OutlineInputBorder(borderSide: BorderSide.none);
+  final OutlineInputBorder textFieldErrorBorder = textFieldBorder.copyWith(borderSide: BorderSide(color: colorScheme.error));
 
   final TextTheme textTheme = defaultTheme.textTheme;
 
@@ -53,11 +42,7 @@ ThemeData themeBuilder({
   );
 
   final ButtonStyle elevatedButtonStyle = ElevatedButton.styleFrom(
-    textStyle: AppTextStyle.bodyLarge.copyWith(
-      color: IgboLocaleColor.textDark,
-      fontWeight: AppFontWeight.w700,
-      fontSize: 20,
-    ),
+    textStyle: AppTextStyle.bodyLarge.copyWith(color: IgboLocaleColor.textDark, fontWeight: AppFontWeight.w700, fontSize: 20),
     elevation: 3,
     padding: AppEdgeInsets.eA16,
     foregroundColor: IgboLocaleColor.textDark,

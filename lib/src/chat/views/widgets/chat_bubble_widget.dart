@@ -1,9 +1,9 @@
 import 'package:faker/faker.dart';
 import 'package:flutter/material.dart';
-import 'package:igbo_flutter_locale_demo/config/constants/icons.dart';
-import 'package:igbo_flutter_locale_demo/config/extensions/extensions.dart';
-import 'package:igbo_flutter_locale_demo/config/theme/app_theme.dart';
-import 'package:igbo_flutter_locale_demo/config/theme/igbo_locale_color.dart';
+import 'package:flutter_meets_igbo/config/constants/icons.dart';
+import 'package:flutter_meets_igbo/config/extensions/extensions.dart';
+import 'package:flutter_meets_igbo/config/theme/app_theme.dart';
+import 'package:flutter_meets_igbo/config/theme/igbo_locale_color.dart';
 
 Row chatBubbleWidget(BuildContext context, {required bool fromUser, String? text, int? index, required Faker faker}) {
   return Row(

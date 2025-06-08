@@ -3,20 +3,20 @@ import 'dart:async';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:faker/faker.dart';
 import 'package:flutter/material.dart';
-import 'package:igbo_flutter_locale_demo/config/constants/enums.dart';
-import 'package:igbo_flutter_locale_demo/config/constants/icons.dart';
-import 'package:igbo_flutter_locale_demo/config/constants/image_constants.dart';
-import 'package:igbo_flutter_locale_demo/config/constants/text_constants.dart';
-import 'package:igbo_flutter_locale_demo/config/extensions/extensions.dart';
-import 'package:igbo_flutter_locale_demo/config/theme/app_border_radius.dart';
-import 'package:igbo_flutter_locale_demo/config/theme/app_style.dart';
-import 'package:igbo_flutter_locale_demo/config/theme/app_theme.dart';
-import 'package:igbo_flutter_locale_demo/config/theme/igbo_locale_color.dart';
-import 'package:igbo_flutter_locale_demo/main.dart';
-import 'package:igbo_flutter_locale_demo/src/home/provider/home_controller.dart';
-import 'package:igbo_flutter_locale_demo/src/onboard/views/sign_in_screen.dart';
-import 'package:igbo_flutter_locale_demo/src/utils/navigation_helper.dart';
-import 'package:igbo_flutter_locale_demo/src/utils/shared_prefs.dart';
+import 'package:flutter_meets_igbo/config/constants/enums.dart';
+import 'package:flutter_meets_igbo/config/constants/icons.dart';
+import 'package:flutter_meets_igbo/config/constants/image_constants.dart';
+import 'package:flutter_meets_igbo/config/constants/text_constants.dart';
+import 'package:flutter_meets_igbo/config/extensions/extensions.dart';
+import 'package:flutter_meets_igbo/config/theme/app_border_radius.dart';
+import 'package:flutter_meets_igbo/config/theme/app_style.dart';
+import 'package:flutter_meets_igbo/config/theme/app_theme.dart';
+import 'package:flutter_meets_igbo/config/theme/igbo_locale_color.dart';
+import 'package:flutter_meets_igbo/main.dart';
+import 'package:flutter_meets_igbo/src/home/provider/home_controller.dart';
+import 'package:flutter_meets_igbo/src/onboard/views/sign_in_screen.dart';
+import 'package:flutter_meets_igbo/src/utils/navigation_helper.dart';
+import 'package:flutter_meets_igbo/src/utils/shared_prefs.dart';
 
 class ProfileScreen extends StatelessWidget {
   ProfileScreen({super.key});
@@ -25,6 +25,9 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final themeContext = Theme.of(context);
+    final l10nEnum = L10nEnum.fromLocale(context.locale);
+    final localeLang = l10nEnum.lang;
+    final localeFlag = l10nEnum.flag;
     return Scaffold(
       body: Stack(
         children: [
@@ -63,10 +66,10 @@ class ProfileScreen extends StatelessWidget {
                         children: [
                           Text(TextConstant.settings.tr().toTitleCase(), style: context.textTheme.bodyLarge, textScaleFactor: 1.3),
 
-                          // THEME BUTTON
-                          GestureDetector(
-                            child: Card(child: ListTile(title: Text(TextConstant.theme.tr().toTitleCase()), leading: const Icon(nightIcon))),
-                          ),
+                          // // THEME BUTTON
+                          // GestureDetector(
+                          //   child: Card(child: ListTile(title: Text(TextConstant.theme.tr().toTitleCase()), leading: const Icon(nightIcon))),
+                          // ),
 
                           //LOCALE
                           GestureDetector(
@@ -77,7 +80,12 @@ class ProfileScreen extends StatelessWidget {
                                 changeLocaleModal(context, themeContext, homeController);
                               });
                             },
-                            child: Card(child: ListTile(title: Text(TextConstant.locale.tr().toTitleCase()), leading: const Icon(nightIcon))),
+                            child: Card(
+                              child: ListTile(
+                                title: Text('${TextConstant.locale.tr().toTitleCase()} ($localeLang)'),
+                                leading: CircleAvatar(radius: 15, child: Center(child: Text(localeFlag, style: TextStyle(fontSize: 20)))),
+                              ),
+                            ),
                           ),
 
                           /// SIGN OUT BUTTON

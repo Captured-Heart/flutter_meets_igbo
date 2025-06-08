@@ -1,4 +1,4 @@
-package com.example.igbo_flutter_locale_demo
+package com.example.flutter_meets_igbo
 
 import io.flutter.embedding.android.FlutterActivity
 
