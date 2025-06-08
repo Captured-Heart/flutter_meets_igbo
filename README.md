@@ -30,6 +30,10 @@
 
 ## AN INTRO VIDEO OF THE APP
 
+
+https://github.com/user-attachments/assets/e632ac94-bfdc-4e0a-8f7c-e02f3415ddae
+
+
 # Demo (What to test)
 
 <div align="left">
