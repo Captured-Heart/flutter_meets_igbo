@@ -39,7 +39,7 @@ https://github.com/user-attachments/assets/e632ac94-bfdc-4e0a-8f7c-e02f3415ddae
 <div align="left">
 - On the Chat view, you can change the locale of the app, by tapping the button at the top-right. <br/>
 - On the Profile view, you can change the locale of the app, by tapping on the "Locale" button as well 🥳<br/>
-- On the Home/Profile view, you can access the authentication views by tapping "Sign out", and also see that the flutter widgets (Textfield) takes in the native language<br/>
+- On the Home/Profile view, you can access the authentication views by tapping "Sign out", and also see that the flutter widgets (Textfield) takes in the native language.<br/>
 
 </div>
 
