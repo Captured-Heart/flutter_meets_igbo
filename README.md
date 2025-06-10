@@ -117,5 +117,6 @@ fvm install
 - [cached_network_image](https://pub.dev/packages/cached_network_image): A flutter library to show images from the internet and keep them in the cache directory
 - [Easy_localizations](https://pub.dev/packages/easy_localization): Easy and fast internationalization for your flutter apps
 - [Faker](https://pub.dev/packages/faker): A library for Dart that generates fake data.
+- [flutter_widget_from_html](https://pub.dev/packages/flutter_widget_from_html): Flutter package to render html as widgets that supports hyperlink, image, audio, video, iframe and 70+ other tags.
 
 
