@@ -1,33 +1,5 @@
 import 'package:flutter/material.dart';
 
-// class L10n {
-//   static final all = [const Locale('en', 'US'), const Locale('es', 'ES'), const Locale('ig', 'NG')];
-
-//   static String getFlag(String locale) {
-//     switch (locale) {
-//       case 'US':
-//         return '🇺🇸';
-//       case 'ES':
-//         return '🇪🇸';
-//       case 'NG':
-//         return '🇳🇬';
-//       default:
-//         return '🇺🇸';
-//     }
-//   }
-
-//   static String getLang(String locale) {
-//     switch (locale) {
-//       case 'US':
-//         return ' English';
-//       case 'ES':
-//         return ' Spanish';
-//       default:
-//         return ' English';
-//     }
-//   }
-// }
-
 enum L10nEnum {
   enUS('🇺🇸', 'English', Locale('en', 'US')),
   esES('🇪🇸', 'Spanish', Locale('es', 'ES')),
