@@ -14,6 +14,7 @@ import 'package:flutter_meets_igbo/src/onboard/views/sign_up_screen.dart';
 import 'package:flutter_meets_igbo/src/onboard/views/splash_screen.dart';
 import 'package:flutter_meets_igbo/src/utils/shared_prefs.dart';
 import 'package:flutter_meets_igbo/src/widgets/dialogs.dart';
+import 'package:lukehog/lukehog.dart';
 
 final HomeController homeController = HomeController();
 final ChatController chatController = ChatController();
@@ -22,6 +23,9 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await EasyLocalization.ensureInitialized();
   await SharedPreferencesHelper.initSharedPref();
+  // final analytics = Lukehog("Viyf9NyQHl6vAf5b", debug: false);
+  // analytics.setUserId("user123");
+  // analytics.capture("test_event", properties: {"condition": "Staging", "version": "1.0.0"}, timestamp: DateTime.now());
   chatController.getStory();
   runApp(
     EasyLocalization(

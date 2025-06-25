@@ -1,15 +1,22 @@
 # Flutter meets Igbo: Integrating Igbo & native languages into your flutter app using Easy_localizations
 
 <div align="center">
-   <img src="./assets/images/logo.png" width="300" height="350" color="0xFF2676FC"/>
+   <img src="./assets/images/logo2.png" width="300" height="350" color="0xFF2676FC"/>
    </div>
 
 <p>
   Welcome to <strong>Flutter Meets Igbo</strong>, a Flutter localization demo project that showcases how to add support for native languages — specifically <strong>Igbo (ig_NG)</strong> — using the powerful 
-  <a href="https://pub.dev/packages/easy_localization" target="_blank">easy_localization</a> package.</br></br>
+  <a href="https://pub.dev/packages/easy_localization" target="_blank">easy_localization</a> package.</br>
+
+<sub>Built by <a href="https://twitter.com/_Captured_Heart">Nkpozi Marcel Kelechi (X: @Captured-Heart)</a></sub>
 
 </p>
+
 # Setup guide
+
+<div align="center">
+  <img src="./assets/images/flutter_meets_igbo_bg.png" width="1000" height="350" color="0xFF2676FC"/>
+</div>
   <div>
 
 Read the setup article: "Flutter meets Igbo: Integrate Igbo and Other Native Languages into Flutter Apps: A Step-by-Step Guide Using easy_localization": </br>
@@ -32,16 +39,11 @@ Hashnode: https://capturedheart.hashnode.dev/flutter-meets-igbo
   Whether you're building for a local audience or promoting cultural inclusion in your app, this project is a great starting point for embracing indigenous languages in mobile development.
 </p>
 
-<br/>
-
-<sub>Built by <a href="https://twitter.com/_Captured_Heart">Nkpozi Marcel Kelechi (X: @Captured-Heart)</a></sub>
 <br />
 
 ## AN INTRO VIDEO OF THE APP
 
-
 https://github.com/user-attachments/assets/e632ac94-bfdc-4e0a-8f7c-e02f3415ddae
-
 
 # Demo (What to test)
 
@@ -127,5 +129,3 @@ fvm install
 - [Easy_localizations](https://pub.dev/packages/easy_localization): Easy and fast internationalization for your flutter apps
 - [Faker](https://pub.dev/packages/faker): A library for Dart that generates fake data.
 - [flutter_widget_from_html](https://pub.dev/packages/flutter_widget_from_html): Flutter package to render html as widgets that supports hyperlink, image, audio, video, iframe and 70+ other tags.
-
-
