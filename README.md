@@ -7,6 +7,9 @@
 <p>
   Welcome to <strong>Flutter Meets Igbo</strong>, a Flutter localization demo project that showcases how to add support for native languages — specifically <strong>Igbo (ig_NG)</strong> — using the powerful 
   <a href="https://pub.dev/packages/easy_localization" target="_blank">easy_localization</a> package.</br></br>
+
+</p>
+# Setup guide
   <div>
 
 Read the setup article: "Flutter meets Igbo: Integrate Igbo and Other Native Languages into Flutter Apps: A Step-by-Step Guide Using easy_localization": </br>
@@ -14,7 +17,6 @@ Medium: https://medium.com/@nkpozimarcelkelechi/flutter-meets-igbo-5c3e148f81e5 
 Hashnode: https://capturedheart.hashnode.dev/flutter-meets-igbo
 
 </div>
-</p>
 
 <p>
   This project goes beyond basic text translation. It demonstrates how to:
